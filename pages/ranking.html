@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ranking</title>
+
+<link rel="stylesheet" href="../css/menu.css">
+<link rel="stylesheet" href="../css/ranking.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- MEU CARD (DINÂMICO) -->
+    <div class="perfil ranking-meu-card">
+
+        <img id="avatarUsuario" class="avatar-topo" src="">
+
+        <div class="perfil-info">
+
+            <h2 id="nomeUsuario"></h2>
+
+            <p class="subtitulo">Minha posição no ranking</p>
+
+            <div class="status-bar">
+
+                <div class="status-item">
+                    🏆 Posição:
+                    <span id="posicaoUsuario">-</span>
+                </div>
+
+                <div class="status-item">
+                    ⭐ Pontos:
+                    <span id="pontosUsuario">-</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- TOP 3 (dinâmico via JS) -->
+        <h3 class="section-title">
+        🏅 Top 3
+        </h3>
+
+        <div id="top3" class="top3-container">
+
+        </div>
+
+        <h3 class="section-title">
+        📊 Classificação
+        </h3>
+
+        <div id="rankingList"
+            class="ranking-list">
+
+        </div>
+
+</div>
+
+<nav class="bottom-nav">
+
+    <a href="palpites.html" class="nav-item">
+        <span class="nav-icon">⚽</span>
+        <span>Palpites</span>
+    </a>
+
+    <a href="ranking.html" class="nav-item active">
+        <span class="nav-icon">🏆</span>
+        <span>Ranking</span>
+    </a>
+
+    <a href="regras.html" class="nav-item">
+        <span class="nav-icon">📖</span>
+        <span>Regras</span>
+    </a>
+
+</nav>
+
+<script src="../js/ranking.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    min-height:100vh;
+
+    background-image:url("../assets/background1.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    overflow-x:hidden;
+}
+
+/* Escurece o fundo */
+
+.overlay{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.50);
+
+    z-index:1;
+}
+
+/* Container principal */
+
+.landing-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+/* Card principal */
+
+.glass-card{
+
+    width:100%;
+
+    max-width:520px;
+
+    padding:35px;
+
+    border-radius:32px;
+
+    backdrop-filter:blur(14px);
+
+    background:rgba(255,255,255,0.12);
+
+    border:1px solid rgba(255,255,255,0.20);
+
+    text-align:center;
+
+    color:white;
+
+    box-shadow:
+    0 8px 30px rgba(0,0,0,0.30),
+    0 0 30px rgba(255,255,255,0.05);
+}
+
+/* Mascote */
+
+.mascot{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.mascot img{
+
+    width:190px;
+
+    max-width:100%;
+
+    animation:pulse 2.5s infinite;
+}
+
+/* Título */
+
+h1{
+
+    font-family:'Rubik Mono One', sans-serif;
+
+    margin-top:15px;
+
+    line-height:1.2;
+
+    font-size:2.3rem;
+
+    color:white;
+
+    text-shadow:
+    0 0 10px rgba(255,215,0,0.60),
+    0 0 20px rgba(255,215,0,0.30);
+}
+
+h1 span{
+
+    display:block;
+
+    margin-top:10px;
+
+    color:#FFD700;
+}
+
+/* Subtítulo */
+
+.subtitle{
+
+    margin-top:15px;
+
+    font-size:1rem;
+
+    opacity:0.95;
+
+    line-height:1.5;
+}
+
+/* Card de boas-vindas */
+
+.welcome-card{
+
+    margin-top:25px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.10);
+
+    border:1px solid rgba(255,255,255,0.10);
+
+    line-height:1.7;
+
+    font-size:0.95rem;
+}
+
+/* Botão */
+
+#btnParticipar{
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:20px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#FFD700;
+
+    color:#222;
+
+    font-size:1.1rem;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    animation:buttonGlow 2s infinite;
+
+    box-shadow:0 0 15px rgba(255,215,0,0.50);
+}
+
+#btnParticipar:hover{
+
+    transform:scale(1.03);
+}
+
+/* Mascote respirando */
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.08);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* Botão brilhando */
+
+@keyframes buttonGlow{
+
+    0%{
+        box-shadow:0 0 10px rgba(255,215,0,0.40);
+    }
+
+    50%{
+        box-shadow:0 0 35px rgba(255,215,0,0.90);
+    }
+
+    100%{
+        box-shadow:0 0 10px rgba(255,215,0,0.40);
+    }
+}
+
+/* MOBILE FIRST */
+
+@media (max-width:480px){
+
+    .glass-card{
+
+        padding:25px;
+    }
+
+    .mascot img{
+
+        width:150px;
+    }
+
+    h1{
+
+        font-size:1.6rem;
+    }
+
+    .subtitle{
+
+        font-size:0.90rem;
+    }
+
+    .welcome-card{
+
+        font-size:0.90rem;
+    }
+
+    #btnParticipar{
+
+        font-size:1rem;
+
+        padding:18px;
+    }
+}

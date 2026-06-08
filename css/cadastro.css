@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#0b1320;
+
+    font-family:Arial, sans-serif;
+
+    padding:20px;
+}
+
+.container{
+
+    width:100%;
+
+    max-width:500px;
+}
+
+.card{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    text-align:center;
+}
+
+.mascote{
+
+    width:120px;
+
+    animation:pulse 2.5s infinite;
+}
+
+h1{
+
+    margin-top:10px;
+}
+
+.texto{
+
+    margin-top:10px;
+
+    color:#666;
+}
+
+form{
+
+    margin-top:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+input{
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:1px solid #ccc;
+
+    font-size:16px;
+}
+
+#avatarGrid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(5,1fr);
+
+    gap:10px;
+
+    margin-top:10px;
+}
+
+.avatar{
+
+    border:2px solid transparent;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    padding:4px;
+}
+
+.avatar img{
+
+    width:100%;
+}
+
+.avatar.selecionado{
+
+    border-color:#FFD700;
+}
+
+button{
+
+    margin-top:15px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#FFD700;
+
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}

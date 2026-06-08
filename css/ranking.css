@@ -1,0 +1,320 @@
+/* ===================================
+   RANKING - PITACO CUP
+=================================== */
+
+body{
+
+    background-image:url('../assets/background.png');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+    font-family:Arial,sans-serif;
+
+    padding:20px;
+    padding-bottom:140px;
+}
+
+.container{
+
+    max-width:700px;
+    margin:auto;
+}
+
+
+/* ===================================
+   CARD DO USUÁRIO
+=================================== */
+
+.perfil{
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    background:rgba(0,0,0,0.35);
+
+    padding:14px;
+
+    border-radius:18px;
+
+    backdrop-filter:blur(8px);
+
+    margin-bottom:24px;
+}
+
+.avatar-topo{
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+}
+
+.perfil-info{
+
+    flex:1;
+}
+
+.perfil-info h2{
+
+    margin:0;
+    font-size:20px;
+}
+
+.subtitulo{
+
+    margin:4px 0 10px;
+
+    font-size:13px;
+
+    opacity:0.8;
+}
+
+.status-bar{
+
+    display:flex;
+
+    gap:14px;
+
+    flex-wrap:wrap;
+
+    font-size:14px;
+}
+
+
+/* ===================================
+   TÍTULOS
+=================================== */
+
+.section-title{
+
+    margin:24px 0 12px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    opacity:0.95;
+}
+
+
+/* ===================================
+   TOP 3
+=================================== */
+
+.top3-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    margin-bottom:24px;
+}
+
+.top3-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:16px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(10px);
+}
+
+.top3-avatar{
+
+    width:72px;
+    height:72px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+}
+
+.top3-info{
+
+    flex:1;
+}
+
+.top3-nome{
+
+    font-size:18px;
+
+    font-weight:700;
+}
+
+.top3-posicao{
+
+    font-size:14px;
+
+    opacity:0.8;
+
+    margin-top:2px;
+}
+
+.top3-pontos{
+
+    background:#FFD700;
+
+    color:black;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-weight:bold;
+}
+
+/* Medalhas */
+
+.gold{
+
+    border:2px solid rgba(255,215,0,0.6);
+}
+
+.silver{
+
+    border:2px solid rgba(192,192,192,0.6);
+}
+
+.bronze{
+
+    border:2px solid rgba(205,127,50,0.6);
+}
+
+
+/* ===================================
+   4º AO 10º
+=================================== */
+
+.ranking-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+}
+
+.ranking-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 16px;
+
+    border-radius:18px;
+
+    backdrop-filter:blur(10px);
+
+    transition:0.2s;
+}
+
+/* efeito zebra */
+
+.ranking-item:nth-child(odd){
+
+    background:rgba(255,255,255,0.10);
+}
+
+.ranking-item:nth-child(even){
+
+    background:rgba(255,255,255,0.18);
+}
+
+.ranking-item:hover{
+
+    background:rgba(255,255,255,0.24);
+}
+
+.ranking-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+}
+
+.ranking-posicao{
+
+    width:35px;
+
+    text-align:center;
+
+    font-weight:bold;
+}
+
+.ranking-avatar{
+
+    width:46px;
+    height:46px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+}
+
+.ranking-nome{
+
+    font-weight:600;
+}
+
+.ranking-pontos{
+
+    background:#FFD700;
+
+    color:black;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-weight:bold;
+}
+
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media(max-width:600px){
+
+    .top3-avatar{
+
+        width:64px;
+        height:64px;
+    }
+
+    .top3-nome{
+
+        font-size:16px;
+    }
+
+    .ranking-avatar{
+
+        width:40px;
+        height:40px;
+    }
+
+    .ranking-pontos{
+
+        font-size:13px;
+    }
+}

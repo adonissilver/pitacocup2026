@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro - Pitaco Cup</title>
+
+    <link rel="stylesheet"
+          href="../css/cadastro.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <img
+            src="../assets/logo/mascote.png"
+            alt="Mascote"
+            class="mascote">
+
+        <h1>Cadastro Rápido</h1>
+
+        <p class="texto">
+
+            Informe seus dados para participar
+            do Pitaco Cup 2026.
+
+        </p>
+
+        <form id="formCadastro">
+
+            <input
+                type="text"
+                id="nome"
+                maxlength="20"
+                placeholder="Nome ou Apelido"
+                required>
+
+            <input
+                type="text"
+                id="departamento"
+                maxlength="10"
+                placeholder="Departamento"
+                required>
+
+            <input
+                type="tel"
+                id="telefone"
+                placeholder="Telefone com DDD"
+                required>
+
+            <h3>Escolha seu Avatar</h3>
+
+            <div id="avatarGrid">
+
+                <!-- preenchido pelo javascript -->
+
+            </div>
+
+            <button type="submit">
+
+               ⚽ Participar 
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="../js/cadastro.js"></script>
+
+</body>
+
+</html>
